@@ -1,0 +1,49 @@
+Cloud Partners Categories:
+SNOWFLAKE IS AVAILABLE ON AWS, AZURE, AND GOOGLE IN OVER 20 REGIONS ACROSS THE GLOBE.
+Snowflake is uniquely built to be global,  meaning customers get a single and seamless experience regardless of cloud or region.
+
+If you select AWS as cloud provider when you create your account , it does not mean that you can not access GCP or Azure storage.
+
+1)Our Data Cloud was first available on Amazon Web Services (AWS), which remains an integral Snowflake partner with which we have many joint customers.
+Initially snowflake account URL was having only account locator as identifier . Currently region and provider has also been added in URL when you login to snowsight.
+
+2)As Snowflake continues to grow, our customer base continues to expand. We’ve answered by making our Data Cloud available on Microsoft to best serve our customers’ needs.
+
+3)In early 2020, we yet again responded to our customers by offering Snowflake on Google, and continue to expand by making Snowflake available in more Google regions.
+
+
+
+Partner Connect: Reference: https://docs.snowflake.com/en/user-guide/ecosystem-partner-connect
+https://docs.snowflake.com/en/user-guide/ecosystem-all
+
+The Admin area of Snowsight, the Snowflake web interface, is your Snowflake command center. 
+
+Use the Admin area to:
+
+few tasks...
+
+The Partner Connect page of Snowsight lets you connect with third-party tools and services offered by Snowflake business partners.
+
+Use the categories, located in the upper-left corner of the page, to filter the Partner Connect page. The page provides the following categories:
+
+All Categories (default)
+
+Business Intelligence
+
+CI/CD
+
+Data Integration
+
+Data Science & ML
+
+Security & Governance
+
+--give few tools examples
+
+Security Requirements:
+
+Partner Connect is limited to account administrators (i.e. users with the ACCOUNTADMIN role) who have a verified email address in Snowflake:
+To use Partner Connect, you must switch to the ACCOUNTADMIN role or contact someone in your organization who has the role.
+
+
+
