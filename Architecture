@@ -1,0 +1,34 @@
+Snowflake Data Warehouse Architecture
+
+Two concepts:
+Shared disk Architecture-
+All computational nodes in this system share the same disk or storage device. Although each processing node (processor) has its memory, 
+all processors have access to all disks. Since all nodes can access the same data, cluster control software is needed to monitor and control data processing. 
+All nodes have a uniform copy of the data when updated or deleted. Two (or more) nodes trying to edit the same data simultaneously must not be allowed.
+A shared disk architecture is typically well-suited for large-scale computing that requires ACID compliance.
+
+Shared-nothing Architecture-
+Each computing node has its private memory and storage or disk space in a shared-nothing architecture. These nodes can communicate with each other due
+to interconnected network connections. When a request for processing comes in, a router routes it to the proper computing node for fulfillment.
+
+Snowflake Architecture
+The Snowflake architecture combines shared-nothing and shared-disk architecture. Snowflake uses a central data repository accessible from all compute nodes in the
+platform, like shared-disk systems. Snowflake, however, utilizes MPP (massively parallel processing) compute clusters to perform queries.
+Each node in the cluster keeps a piece of the entire data set locally, like shared-nothing systems. 
+This method combines a shared-disk design's ease of data management with a shared-nothing architecture's efficiency and scale-out advantages.
+
+The Snowflake data warehouse architecture has three layers -
+
+Database Storage Layer
+
+Query Processing Layer
+
+Cloud Services Layer
+
+How Does Snowflake Store Data Internally? 
+
+As soon as data enters the Snowflake data storage layer, it is restructured into multiple micro-partitions that are internally optimized, compressed, and stored in columnar format.
+Data administration is easier using the cloud for data storage, which operates as a shared-disk architecture (data accessible by all clusters). 
+The only way for users to access the data objects that Snowflake stores in its storage layer are via running SQL query operations; they are neither directly visible nor accessible.
+
+Micro Partitions, Data Clustering, and Columnar Format are a few key concepts relevant to the data storage layer that go into creating Snowflake's table structure for its faster retrieval.
