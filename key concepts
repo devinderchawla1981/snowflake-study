@@ -1,0 +1,47 @@
+A Data Warehouse is a central information repository that enables Data Analytics and Business Intelligence (BI) activities.
+
+A)Snowflake is a Data Warehouse solution that supports ANSI SQL and is available as a SaaS (Software-as-a-Service).
+Snowflake is a cloud-based data platform that provides excellent manageability regarding data warehousing, data lakes, data analytics, etc. Snowflake's 
+fantastic feature is that it can handle a near-infinite number of concurrent workloads, ensuring that your users can always perform what they need to do when they need to.
+
+B)Snowflake Features that Make Data Science Easier
+1)Centralized Source of Data
+Data scientists usually invest up to 80% of their time seeking, extracting, merging, filtering, and preparing data.
+Snowflake puts all data on a single high-performance platform by bringing data in from many locations, reducing the complexity and delay imposed by standard ETL processes. 
+
+2)Provides Powerful Computing Resources for Data Processing
+Feature Engineering is converting raw data into required format so that it is ready to analyze and get required information.
+
+Snowflake's unique design provides an independent compute cluster for each workload and team, ensuring that data engineering, BI, and data science workloads do not compete for resources.
+Snowflake's machine learning partners transfer most of their automated feature engineering down into Snowflake's cloud data platform.
+
+3)Extensive Network of Partners
+Snowflake's extensive network of partners allows customers to take advantage of direct connections to all existing and emerging data science-
+
+languages including Python, R, Java, and Scala;
+open-source libraries like PyTorch, XGBoost, TensorFlow, and scikit-learn;
+notebooks like Jupyter and Zeppelin; and
+platforms like DataRobot, Dataiku, H2O.ai, Zepl, Amazon Sagemaker, etc
+
+C)Exceptional features offered by the Snowflake data warehouse solution-
+1)Minimize the Need for Administration-
+Snowflake is a data warehousing platform that runs on the cloud. The system's design provides a high level of performance while removing the need for 
+administrative overhead. The database is entirely managed and scales automatically in response to workload demands. 
+Performance tweaking, infrastructure management, and optimization capabilities are all built-in, which gives businesses peace of mind. 
+2)Easily Available-
+Snowflake Architecture is designed to be fully distributed, covering multiple zones and regions, and is highly fault-tolerant in the event of hardware failure. 
+3)Highly Secure-
+ It supports two-factor authentication and federated authentication with SSO support.
+ Access control is based on roles and the ability to limit access based on pre-defined conditions. 
+ Snowflake also has several accreditations, such as HIPAA and SOC2 Type 2.
+ 4)Easy Data Sharing among Partners-
+ Snowflake's native sharing tools, accessible via native SQL, enable you to avoid the constraints of FTP or email.
+ 5)Multi-Cloud Support- 
+ Snowflake is a fully managed data warehouse deployed across various clouds while maintaining the same intuitive user interface. 
+ 6)Excellent Performance- 
+ Snowflake lets users define a cluster size for initial deployment and then scale up or down as needed once the system is active. Snowflake handles scaling activities transparently for its customers.
+ 7)Pay-per-use Pricing-
+ No prior expenses or considerable planning is necessary to start your data warehousing project. Clusters automatically scale up to handle heavy workloads and back down to the pre-defined size. 
+ Users are only charged for the increased capacity while it is in use.
+ 
+
