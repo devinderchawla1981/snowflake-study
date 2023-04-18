@@ -12,15 +12,20 @@ Initially snowflake account URL was having only account locator as identifier . 
 3)In early 2020, we yet again responded to our customers by offering Snowflake on Google, and continue to expand by making Snowflake available in more Google regions.
 
 
+Snowflake EcoSystem:
+Snowflake works with a wide array of industry-leading tools and technologies:
+1)Certified partners who have developed cloud-based and on-premises solutions for connecting to Snowflake.
+2)Other 3rd-party tools and technologies that are known to work with Snowflake.
+3)Snowflake-provided clients, including SnowSQL (command line interface), connectors for Python and Spark, and drivers for Node.js, JDBC, ODBC, and more
 
-Partner Connect: Reference: https://docs.snowflake.com/en/user-guide/ecosystem-partner-connect
-https://docs.snowflake.com/en/user-guide/ecosystem-all
+We will focus on Partners for now.
+
+Partner Connect: 
 
 The Admin area of Snowsight, the Snowflake web interface, is your Snowflake command center. 
+Partner Connect lets you easily create trial accounts with selected Snowflake business partners and integrate these accounts with Snowflake.
+This feature provides a convenient option for trying various 3rd-party tools and services, and then adopting the ones that best meet your business needs.
 
-Use the Admin area to:
-
-few tasks...
 
 The Partner Connect page of Snowsight lets you connect with third-party tools and services offered by Snowflake business partners.
 
@@ -28,9 +33,9 @@ Use the categories, located in the upper-left corner of the page, to filter the 
 
 All Categories (default)
 
-Business Intelligence
+Business Intelligence e.g. AWS QuickSight,IBM Cognos,Looker,PowerBI,Microstrategy
 
-CI/CD
+CI/CD e.g. 
 
 Data Integration
 
