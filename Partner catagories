@@ -33,22 +33,47 @@ Use the categories, located in the upper-left corner of the page, to filter the 
 
 All Categories (default)
 
+Data Integration e.g.  Abinitio, dbt labs,IBM Datastage, Informatica,Apache Kafka,Rivery
+
 Business Intelligence e.g. AWS QuickSight,IBM Cognos,Looker,PowerBI,Microstrategy
 
-CI/CD e.g. 
+Data Science & ML e.g. Alteryx,Amazon Segamaker,Databricks, SAS,Apache Spark
 
-Data Integration
+Security & Governance e.g. Alation,Atlan,Collibra,Satori,
 
-Data Science & ML
+SQL Development & Management e.g. snowflake worksheets, SnowSQL(Python-based client for performing all tasks in Snowflake,
+                            including querying, executing DDL/DML commands, and bulk loading/unloading of data.) , Snowflake SQL Extension for Visual Studio Code.
+In addition, Snowflake works with a variety of 3rd-party SQL tools for managing the modeling,development, and deployment
+of SQL code in your Snowflake applications . e.g. Dataops,Aginity,Erwin
 
-Security & Governance
+Native Programmatic Interfaces Snowflake supports developing applications using many popular programming languages and development platforms. e.g. Go,Python,
+PHP and node js etc.
 
---give few tools examples
 
 Security Requirements:
 
 Partner Connect is limited to account administrators (i.e. users with the ACCOUNTADMIN role) who have a verified email address in Snowflake:
 To use Partner Connect, you must switch to the ACCOUNTADMIN role or contact someone in your organization who has the role.
+
+Click on the corresponding tile for the partner to which you wish to connect.
+
+A dialog displays the requirements for connecting to the partner, as well as a list of the objects automatically created in Snowflake during the connection process, 
+including an empty database, warehouse, default user, and custom role. The partner application uses these objects when reading from or writing to your account.
+
+Optionally specify one or more existing databases in Snowflake to automatically use with the trial. 
+This creates an additional custom role that makes existing data in Snowflake quickly and easily available to the partner application.
+
+Objects Created for the Partner: 4 
+
+In addition, if you optionally chose to specify one or more existing databases during the initial connection process, a second custom role is created with all of the necessary privileges to access the tables in the databases:
+
+PC_<partner>_DB_PICKER_ROLE
+
+This role is then granted to the PC_<partner>_ROLE, which enables all the tables in the specified databases to be used by the partner application with minimal (or no) additional configuration.
+
+Note that this second role is not displayed in the dialog, but the role is created automatically after all the other objects listed in the dialog are created.
+
+
 
 
 
