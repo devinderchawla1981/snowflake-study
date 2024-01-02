@@ -1,0 +1,20 @@
+Make your pipeline easy. Fundamental blocks for continous pipelines.
+
+https://www.youtube.com/watch?v=4Atv-6DKOm4
+https://www.youtube.com/watch?v=fDsvSuOvbks
+
+Features
+1)Declarative data pipelines 
+2)SQL Support
+3)User Defined Freshness
+4)Automatic incremental Refreshes
+5)Snapshot Isolation
+
+
+
+
+
+
+
+
+
