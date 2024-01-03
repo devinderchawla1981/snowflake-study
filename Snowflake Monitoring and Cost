@@ -1,5 +1,23 @@
-New tabs introduced under Admin(Cost Management)
+New tabs introduced under Admin(Cost Management) --can test with trial account using orgadmin role.
 
 select database_name, database_id, MAX(AVERAGE_DATABASE_BYTES) as database_bytes 
 from snowflake.account_usage.database_storage_usage_history 
 where usage_date >= '2023-12-26T00:00:00Z' and usage_date < '2024-01-03T00:00:00Z' group by 1,2 order by 3 desc limit 1000;
+
+Snowflake Database:
+Snowflake provides a system-defined, read-only shared database named SNOWFLAKE that contains metadata and historical usage data about the objects in your organization
+and accounts. 
+
+In each account, the SNOWFLAKE database contains the following schemas :
+
+1)ORGANIZATION_USAGE
+Views that display historical usage data across all the accounts in your organization.
+
+Snowflake session recording:
+https://www.linkedin.com/events/7091903396776984576/comments/
+
+Medium Article
+https://medium.com/snowflake/5-practical-things-you-can-do-today-to-optimize-cost-in-your-snowflake-deployment-8fc7c9f2dbb4
+
+
+
