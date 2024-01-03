@@ -1,3 +1,13 @@
+Description(Problem Statement):
+
+
+Roles/Responsibilities:
+
+OutCome:
+
+
+
+
 New tabs introduced under Admin(Cost Management) --can test with trial account using orgadmin role.
 
 select database_name, database_id, MAX(AVERAGE_DATABASE_BYTES) as database_bytes 
