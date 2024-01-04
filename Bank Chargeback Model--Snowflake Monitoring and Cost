@@ -3,10 +3,52 @@ how to lower your monthly Snowflake bill.
 the term “cost optimization” can mean lots of different things to a host of different audiences. For some, the term may refer to writing optimized, performant queries that are also cost effective. For others, cost optimization may mean warehouse right-sizing, or making sure that the right virtual warehouse is used for the right job. These two examples, 
 however, only scratch the surface, as cost optimization can cover a broad range of things across many of Snowflake’s features. 
 
+Snowflake shared database schemas views have 
+
+
 My Roles/Responsibilities:
 
 OutCome:
 
+Mail content:
+
+1)	Are there specific warehouses that are consuming more credits than the others?
+Should they be? Are there specific warehouses that are consuming more credits than anticipated for that warehouse?
+      
+2)	At which points of the day are we seeing spikes in our consumption? Is that expected?
+
+3)	How many queries are being run on an hourly basis? Is this more or less than we anticipated? What could be causing this?
+
+Example 3
+Assume there is a table called fruit_sales with the following data:
+item	sale_price	sale_date
+Apple	1.50	2023-07-23 10:02:21
+Banana	1.00	2023-07-23 10:23:00
+Apple	1.50	2023-07-23 11:35:10
+Banana	1.00	2023-07-23 11:45:51
+Banana	1.00	2023-07-23 11:58:20
+The DATE_TRUNC() function can be used to summarize how much money the fruit stand is making each hour of a given day:
+SELECT DATE_TRUNC('hour', sale_date) as fruit_sale_hour_at,
+   SUM(sale_price) AS sum_of_fruit_sales
+FROM fruit_sales
+GROUP BY fruit_sale_hour_at
+
+This returns the sale_date, truncated by hour, as fruit_sale_hour_at, and the total cost of the fruit sold during that hour:
+fruit_sale_hour_at	sum_of_fruit_sales
+2023-07-23 10:00:00	2.50
+2022-07-23 11:00:00	3.50
+Based on this analysis, the fruit stand made more money ($3.50) from 11 am to noon than in the previous hour, from 10 am to 11 am ($2.50).
+4)	Use this to identify anomolies in credit consumption for warehouses across weeks from the past year.
+
+What is Moving Average and How to calculate it
+
+
+
+
+This e-mail and any attachments are confidential and intended solely for the addressee and may also be privileged or exempt from disclosure under applicable law. If you are not the addressee, or have received this e-mail in error, please notify the sender immediately, delete it from your system and do not copy, disclose or otherwise act upon any part of this e-mail or its attachments.
+Internet communications are not guaranteed to be secure or virus-free. The Barclays Group does not accept responsibility for any loss arising from unauthorised access to, or interference with, any Internet communications by any third party, or from the transmission of any viruses. Replies to this e-mail may be monitored by the Barclays Group for operational or business reasons.
+Any opinion or other information in this e-mail or its attachments that does not relate to the business of the Barclays Group is personal to the sender and is not given or endorsed by the Barclays Group.
+Barclays Bank PLC. Registered in England and Wales (registered no. 1026167). Registered Office: 1 Churchill Place, London, E14 5HP, United Kingdom. Barclays Bank PLC is authorised by the Prudential Regulation Authority and regulated by the Financial Conduct Authority and the Prudential Regulation Authority (Financial Services Register No. 122702).  
 
 
 
